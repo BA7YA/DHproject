@@ -1,6 +1,7 @@
 # DHproject
 
-Project based on React Framework.
+
+Project "TODO" based on React Framework.
 ___
 To setup project go to the project repository.
 Use following command:
