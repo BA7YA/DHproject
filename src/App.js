@@ -1,13 +1,23 @@
-import logo from './logo.svg';
+import React from 'react';
+import {BrowserRouter as Router, Route,} from 'react-router-dom';
 import './App.css';
+import Header from './Main components/Header/View/Header';
+import Todo from './Pages/Todo/View/Todo';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
-    </div>
+    <>
+      <Router>
+        <div className="header-block">
+           <Header />
+        </div>
+        <div className="body-block">
+          <Route exact path="/">
+              <Todo />
+          </Route>
+        </div> 
+      </Router>
+    </>
   );
 }
 
